@@ -27,7 +27,7 @@ The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 5. Repeat Steps 1-4 for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
 
 ### 3.2 Comparison of A-WDRUC and E-WDRUC
-The cost performances of "A-WDRUC" "E-WDRUC" are compared in a similar way. Specifically, run `sol_AWDR.m`, `sol_EWDR.m`, and `comparisons.m` in sequence for different numbers of training samples `J`. Note that, in this case, the lines related to "SUC" and "RUC" should be commented out and those related to "E-WDRUC" should be uncommented in `comparisons.m`. 
+The cost performances of "A-WDRUC" "E-WDRUC" are compared in a similar way. Specifically, run `sol_AWDR.m`, `sol_EWDR.m`, and `comparisons.m` in sequence for different numbers of training samples `J`. In this case, the lines related to "SUC" and "RUC" should be commented out and those related to "E-WDRUC" should be uncommented in `comparisons.m`. 
 
 ## 4. Troubleshooting
 MATLAB might suddenly crashes while running the codes, which can be the result of incompatibilities between CPLEX functions and recent versions of MATLAB. If this problem recurs, try a lower version of MATLAB. More details are described on the following page:

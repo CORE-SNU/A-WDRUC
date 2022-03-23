@@ -29,6 +29,12 @@ The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 ### 3.2 Comparison of A-WDRUC and E-WDRUC
 The cost performances of "A-WDRUC" "E-WDRUC" are compared in a similar way. Specifically, run `sol_AWDR.m`, `sol_EWDR.m`, and `comparisons.m` in sequence for different numbers of training samples `J`. Note that, in this case, the lines related to "SUC" and "RUC" should be commented out and those related to "E-WDRUC" should be uncommented in `comparisons.m`. 
 
+## 4. Troubleshooting
+MATLAB might suddenly crashes while running the codes, which can be the result of incompatibilities between CPLEX functions and recent versions of MATLAB. If this problem recurs, try a lower version of MATLAB. More details are described on the following page:
+
+Why does MATLAB crash when I run code using IBM's MATLAB-CPLEX Connector?
+https://www.mathworks.com/matlabcentral/answers/354479-why-does-matlab-crash-when-i-run-code-using-ibm-s-matlab-cplex-connector
+
 [paper_link]: ..
 [MATLAB]: https://matlab.mathworks.com
 [CPLEX]: https://www.ibm.com/products/ilog-cplex-optimization-studio

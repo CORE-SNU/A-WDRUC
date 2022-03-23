@@ -18,12 +18,22 @@ The folder has 14 script files. The script files `sol_AWDR.m`, `sol_SP.m`, `sol_
 
 ## 3. Simulations
 ### 3.1 Comparisons of A-WDRUC, SUC, and RUC
-..
+The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 
-### 3.2 Comparison of A-WDRUC and E-WDRUC
-..
+1. Run `sol_AWDR.m`. This yields the results of 50 independent simultaion runs, in each of which 10 training samples of PV forecast error are randomly generated according to its true distribution and a corresponding solution of "A-WDRUC" is returned. The 50 sets of results are saved as MAT-files `sol_AWDR_1.mat`,...,`sol_AWDR_50.mat`.
+2. Run `sol_SP.m`. This yields the results of 50 independent simulation runs, in each of which a solution of "SUC" is returned for the 10 training samples generated in Step 1. The 50 sets of results are saved as MAT-files `sol_SP_1.mat`,...,`sol_SP_50.mat`.
+3. Run `sol_RO.m`. This yields a solution of "RUC", which does not rely on the training samples used in Steps 1 and 2. The results are saved as a MAT-file `sol_RO.mat`.
+4. Run `comparisons.m`. This yields the results of 50 independent simulation runs, in each of which 10,000 test samples of PV forecast error are randomly generated according to its true distribution and the corresponding expected costs incurred by the solutions of "A-WDRUC", "SUC", and "RUC" are calculated. The 50 sets of results are saved as MAT-files `comparisons_1.mat`,...,`comparisons_50.mat`.
 
+### 3.2 Further comparison with E-WDRUC
+The cost performance of "E-WDRUC" can be tested in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m` and what is now commented out in `comparisons.m`.
 
+### 3.3 Modification
+The following parameters/settings may be modified:
+1. the number of training samples `J` (line 3 in `sol_AWDR.m`)
+2. the number of test samples `J_oos` (line 8 in `sol_AWDR.m`)
+3. The candidate values of the Wasserstein ball's radii `epsilon_DRO_track` (line 7 in `sol_AWDR.m`)
+4. The true distribution of PV forecast error (line 55 in `sol_AWDR.m`)
 ## 6. Troubleshooting
 
 Most commonly reported problems we found are follows:

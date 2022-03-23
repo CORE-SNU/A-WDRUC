@@ -23,12 +23,11 @@ The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 1. Run `sol_AWDR.m`. This yields the results of 50 independent simultaion runs, in each of which 10 training samples are generated and a solution of "A-WDRUC" is returned. The 50 sets of results are saved as MAT-files `sol_AWDR_1.mat`,...,`sol_AWDR_50.mat`.
 2. Run `sol_SP.m`. This yields the results of 50 independent simulation runs, in each of which a solution of "SUC" is returned for the 10 training samples generated in Step 1. The 50 sets of results are saved as MAT-files `sol_SP_1.mat`,...,`sol_SP_50.mat`.
 3. Run `sol_RO.m`. This yields a solution of "RUC". The results are saved as a MAT-file `sol_RO.mat`.
-4. Run `comparisons.m`. This yields the results of 50 independent simulation runs, in each of which 10,000 test samples are generated and the expected costs incurred by the solutions of "A-WDRUC", "SUC", and "RUC" are calculated. The 50 sets of results are saved as MAT-files `comparisons_1.mat`,...,`comparisons_50.mat`.
+4. Run `comparisons.m`. This yields the results of 50 independent simulation runs, in each of which 10,000 test samples are generated and the expected costs incurred by the solutions of "A-WDRUC", "SUC", and "RUC" are returned. The 50 sets of results are saved as MAT-files `comparisons_1.mat`,...,`comparisons_50.mat`.
+5. Repeat 1-4 for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
 
-Steps 1--4 are repeated for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
-
-### 3.2 Further comparison with E-WDRUC
-The cost performance of "E-WDRUC" can be tested in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m` and what is now commented out in `comparisons.m`.
+### 3.2 Comparison of A-WDRUC and E-WDRUC
+The cost performance of "E-WDRUC" can be further tested in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m`. Then, uncomment the parts related to "E-WDRUC" in `comparisons` and run it. 
 
 ## 6. Troubleshooting
 

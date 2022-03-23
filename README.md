@@ -24,18 +24,10 @@ The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 2. Run `sol_SP.m`. This yields the results of 50 independent simulation runs, in each of which a solution of "SUC" is returned for the 10 training samples generated in Step 1. The 50 sets of results are saved as MAT-files `sol_SP_1.mat`,...,`sol_SP_50.mat`.
 3. Run `sol_RO.m`. This yields a solution of "RUC". The results are saved as a MAT-file `sol_RO.mat`.
 4. Run `comparisons.m`. This yields the results of 50 independent simulation runs, in each of which 10,000 test samples are generated and the expected costs incurred by the solutions of "A-WDRUC", "SUC", and "RUC" are returned. The 50 sets of results are saved as MAT-files `comparisons_1.mat`,...,`comparisons_50.mat`.
-5. Repeat 1-4 for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
+5. Repeat steps 1-4 for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
 
 ### 3.2 Comparison of A-WDRUC and E-WDRUC
-The cost performances of "A-WDRUC" "E-WDRUC" are compared in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m` and run `comparisons.m`. Note that, in this case, the lines related to "SUC" and "RUC" should be commented out and those related to "E-WDRUC" should be uncommented in `comparisons.m`. 
-
-## 6. Troubleshooting
-
-Most commonly reported problems we found are follows:
-
-Why does MATLAB crash when I run code using IBM's MATLAB-CPLEX Connector?
-https://www.mathworks.com/matlabcentral/answers/354479-why-does-matlab-crash-when-i-run-code-using-ibm-s-matlab-cplex-connector
-
+The cost performances of "A-WDRUC" "E-WDRUC" are compared in a similar way. Specifically, run `sol_AWDR.m`, `sol_EWDR.m`, and `comparisons.m` in sequence for different numbers of training samples `J`. Note that, in this case, the lines related to "SUC" and "RUC" should be commented out and those related to "E-WDRUC" should be uncommented in `comparisons.m`. 
 
 [paper_link]: ..
 [MATLAB]: https://matlab.mathworks.com

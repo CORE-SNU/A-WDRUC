@@ -25,15 +25,11 @@ The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 3. Run `sol_RO.m`. This yields a solution of "RUC". The results are saved as a MAT-file `sol_RO.mat`.
 4. Run `comparisons.m`. This yields the results of 50 independent simulation runs, in each of which 10,000 test samples are generated and the expected costs incurred by the solutions of "A-WDRUC", "SUC", and "RUC" are calculated. The 50 sets of results are saved as MAT-files `comparisons_1.mat`,...,`comparisons_50.mat`.
 
+Steps 1--4 are repeated for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
+
 ### 3.2 Further comparison with E-WDRUC
 The cost performance of "E-WDRUC" can be tested in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m` and what is now commented out in `comparisons.m`.
 
-### 3.3 Modification
-The following parameters/settings may be modified:
-1. the number of training samples `J` (line 3 in `sol_AWDR.m`)
-2. the number of test samples `J_oos` (line 8 in `sol_AWDR.m`)
-3. The candidate values of the Wasserstein ball's radii `epsilon_DRO_track` (line 7 in `sol_AWDR.m`)
-4. The true distribution of PV forecast error (line 55 in `sol_AWDR.m`)
 ## 6. Troubleshooting
 
 Most commonly reported problems we found are follows:

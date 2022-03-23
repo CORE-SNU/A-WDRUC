@@ -7,7 +7,7 @@ To run our codes, the following softwares must be installed:
 - **[MATLAB][MATLAB]**
 - **[CPLEX Optimization Studio][CPLEX]**
 
-which are free for students and academics. Regarding their versions, we used R2019a and 12.10 in the simulations, respectively. 
+which are free for students and academics. Regarding their versions, we used R2019a and 12.10, respectively. 
 
 ## 2. File Description
 ### 2.1 MAT-files 

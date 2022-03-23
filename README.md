@@ -18,19 +18,7 @@ The folder has 14 script files. The script files `sol_AWDR.m`, `sol_SP.m`, `sol_
 
 ## 3. Simulations
 ### 3.1 Comparisons of A-WDRUC, SUC, and RUC
-To compare the cost performances of "A-WDRUC", "SUC", and "RUC", first run `sol_AWDR.m`, by which 50 sets of 10 training samples and corresponding solutions of "A-WDRUC" will be obtained. 
-
 ..
-
-The following settings may be modified: 
-
-the number of training samples `J` (line 3 in `sol_AWDR.m`)
-
-the number of test samples `J_oos` (line 8 in `sol_AWDR.m`)
-
-The candidate values of the Wasserstein ball's radii `epsilon_DRO_track` (line 7 in `sol_AWDR.m`)
-
-The true distribution of PV forecast error (line 55 in `sol_AWDR.m`)
 
 ### 3.2 Comparison of A-WDRUC and E-WDRUC
 ..

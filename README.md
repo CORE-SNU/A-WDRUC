@@ -27,7 +27,7 @@ The cost performances of "A-WDRUC", "SUC", and "RUC" are compared as follows:
 5. Repeat 1-4 for different numbers of training samples `J` (line 3 in `sol_AWDR.m`).
 
 ### 3.2 Comparison of A-WDRUC and E-WDRUC
-The cost performance of "E-WDRUC" can be further tested in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m`. Then, uncomment the parts related to "E-WDRUC" in `comparisons` and run it. 
+The cost performances of "A-WDRUC" "E-WDRUC" are compared in a similar way. Specifically, run `sol_EWDR.m` after `sol_AWDR.m` and run `comparisons.m`. Note that, in this case, the lines related to "SUC" and "RUC" should be commented out and those related to "E-WDRUC" should be uncommented in `comparisons.m`. 
 
 ## 6. Troubleshooting
 
